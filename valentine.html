@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Be My Valentine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="hearts">
+    <span>❤️</span><span>💖</span><span>💕</span><span>💘</span><span>❤️</span>
+</div>
+
+<div class="box">
+    <h1>💖 Will you be my Valentine?</h1>
+    <div class="buttons">
+        <button class="btn yes" onclick="yesClick()">Yes 💘</button>
+        <button class="btn no" onclick="noClick()">No 😜</button>
+    </div>
+</div>
+
+<script>
+function noClick() {
+    alert("😆 Nice try! You don’t have a choice 💕");
+}
+
+function yesClick() {
+    window.location.href = "love.html";
+}
+</script>
+
+</body>
+</html>

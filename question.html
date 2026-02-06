@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="hearts">
+        <span>❤️</span>
+        <span>💖</span>
+        <span>💕</span>
+        <span>💘</span>
+        <span>❤️</span>
+    </div>
+
+    <div class="box">
+        <h1>🤔 What do I like most?</h1>
+        <div class="buttons">
+            <button class="btn food" id="foodBtn">🍔 Food</button>
+            <a href="valentine.html" class="btn">❤️ Me</a>
+        </div>
+        <p class="hint">Hint: There is only one right answer 😉</p>
+    </div>
+
+<script>
+    const foodBtn = document.getElementById("foodBtn");
+
+    foodBtn.addEventListener("mouseover", () => {
+        const x = Math.random() * 200 - 100;
+        const y = Math.random() * 200 - 100;
+        foodBtn.style.transform = `translate(${x}px, ${y}px)`;
+    });
+</script>
+
+</body>
+</html>
