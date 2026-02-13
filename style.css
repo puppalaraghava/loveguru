@@ -230,6 +230,9 @@ h1 {
 .gallery img:nth-child(3) {
   animation-delay: 2s;
 }
+.lvr .btn {
+  border: 1px solid #fff;
+}
 
 @keyframes floatPic {
   0%,
@@ -241,14 +244,11 @@ h1 {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .box {
     min-width: 80%;
     height: 60%;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 20px;
   }
 }

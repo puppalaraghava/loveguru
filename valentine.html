@@ -13,7 +13,7 @@
 
 <div class="box">
     <h1>💖 Will you be my Valentine?</h1>
-    <div class="buttons">
+    <div class="buttons lvr">
         <button class="btn yes" onclick="yesClick()">Yes 💘</button>
         <button class="btn no" onclick="noClick()" id="no">No 😜</button>
     </div>
@@ -23,12 +23,19 @@
     const foodBtn = document.getElementById("no");
 
     foodBtn.addEventListener("mouseover", () => {
-        const x = Math.random() * 200 - 100;
-        const y = Math.random() * 200 - 100;
+        const x = Math.random() * 500 - 100;
+        const y = Math.random() * 500 - 100;
         foodBtn.style.transform = `translate(${x}px, ${y}px)`;
     });
 function noClick() {
     alert("😆 Nice try! You don’t have a choice 💕");
+      const foodBtn = document.getElementById("no");
+
+    foodBtn.addEventListener("mouseover", () => {
+        const x = Math.random()*100 * 200 - 100;
+        const y = Math.random() *100* 200 - 100;
+        foodBtn.style.transform = `translate(${x}px, ${y}px)`;
+    });
 }
 
 function yesClick() {
